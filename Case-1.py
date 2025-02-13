@@ -4,7 +4,7 @@
 
 import turtle as t
 
-def redtriangle(x, y):
+def red_triangle(x, y, a):
     t.fillcolor("red")
     t.penup()
     t.goto(x, y)
@@ -15,10 +15,10 @@ def redtriangle(x, y):
     t.left(90)
     t.forward(a)
     t.goto(x, y)
-    t.right(45)
+    t.setheading(90)
     t.end_fill()
 
-def yellowtriangle(x, y, a):
+def yellow_triangle(x, y, a):
     t.fillcolor("yellow")
     t.penup()
     t.goto(x, y)
@@ -29,8 +29,34 @@ def yellowtriangle(x, y, a):
     t.right(90)
     t.forward(a)
     t.goto(x, y)
-    t.right(90)
-    t.right(135)
+    t.setheading(90)
+    t.end_fill()
+
+def green_rhomb(x, y, a):
+    t.fillcolor("green")
+    t.penup()
+    t.goto(x, y)
+    t.pendown()  
+    t.begin_fill() 
+    t.left(45)  
+    for _ in range(4): 
+       t.forward(a)
+       t.left(90)
+    t.setheading(90)
+    t.end_fill()
+    
+def purple_parallelogram(x, y, a):
+    t.fillcolor("purple")
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.begin_fill()
+    for i in range(2):
+        t.forward(2*a)
+        t.left(60)
+        t.forward(a)
+        t.left(120)
+    t.goto(x,y)
     t.end_fill()
 
 def main():
