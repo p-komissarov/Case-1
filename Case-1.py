@@ -59,6 +59,47 @@ def purple_parallelogram(x, y, a):
     t.goto(x,y)
     t.end_fill()
 
+def pink_triangle(x, y, a):
+    t.fillcolor("pink")
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.begin_fill()
+    t.left(45)
+    t.forward(a)
+    t.right(90)
+    t.forward(a)
+    t.goto(x, y)
+    t.setheading(0)
+    t.end_fill()
+
+def blue_triangle(x, y, a):
+    t.fillcolor("blue")
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.begin_fill()
+    t.left(135)
+    t.forward(a)
+    t.right(90)
+    t.forward(a)
+    t.goto(x, y)
+    t.setheading(0)
+    t.end_fill()
+
+def orange_triangle(x, y, a):
+    t.fillcolor("orange")
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.begin_fill()
+    t.forward(a)
+    t.left(90)
+    t.forward(a)
+    t.goto(x, y)
+    t.setheading(0)
+    t.end_fill()
+
 def main():
     t.speed(3)
     t.pensize(5)
